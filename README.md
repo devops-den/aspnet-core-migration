@@ -1,8 +1,8 @@
-This Guide helps for Users who wants to get start with .Net Framework Conversion to .Net Core.
+<h3> This Guide helps for Users who wants to get start with .Net Framework Conversion to .Net Core. </h3>
 
 Below are the high level substitutions for the packages/methods which are needs to be replace in .Net Core.
 
-[Note](https://www.alextitarenko.me/blog/archive/2018/4/my-experience-with-migration-to-aspnetcore-2)
+[Quick Reference Guide to Understand the Core Migration](https://www.alextitarenko.me/blog/archive/2018/4/my-experience-with-migration-to-aspnetcore-2)
 
 1) I have used this link to convert first "web.config" file to "appsettngs.json".
 
