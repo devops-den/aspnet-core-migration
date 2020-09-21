@@ -24,6 +24,7 @@ css, js and plugins.
 8) Converted "HtmlHelper" to "IHtmlHelper".
 
 9) Using Dependency Injection for appsettings.
+    ```
 	Add get and set in AppSettings.cs
 	---------------------------------
 	public string ApiURL { get; set; }
@@ -63,8 +64,10 @@ css, js and plugins.
 	_appSettings.ApiURL
 	_appSettings.BaseURL
 
+    ```
 10) Converted "System.Web.HttpContext.Current" to "HttpContextAccessor.HttpContext".
 	
+    ```
 	For this we have to add a constructor
 	-------------------------------------
 	public static IHttpContextAccessor HttpContextAccessor;
@@ -73,6 +76,7 @@ css, js and plugins.
         {
             HttpContextAccessor = httpContextAccessor;
         }
+    ```
 	
 11) Converted "Session["Trans"] = transact;" to "Session.SetObject("Trans", "transact");"
 	Note:=> https://benjii.me/2016/07/using-sessions-and-httpcontext-in-aspnetcore-and-mvc-core/
@@ -82,7 +86,7 @@ css, js and plugins.
 	https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-3.0#session-options
 
 12) Converted "Request.IsMobileDevice" to custom class as there is no package/method available in asp.net core.
-	
+	```
 	public static bool Check()
 	{
 		bool IsMobile = false;
@@ -105,6 +109,7 @@ css, js and plugins.
 
 		return IsMobile;
 	}
+    ```
 	
 13) Converted "Request.UrlReferrer" to "uriReferer" by using below,
 		RequestHeaders header = HttpContextAccessor.HttpContext.Request.GetTypedHeaders();
