@@ -5,10 +5,10 @@ Below are the high level substitutions for the packages/methods which are needs 
 Note: https://www.alextitarenko.me/blog/archive/2018/4/my-experience-with-migration-to-aspnetcore-2
 
 1) I have used this link to convert first "web.config" file to "appsettngs.json".
+
 https://andrewlock.net/converting-web-config-files-to-appsettings-json-with-a-net-core-global-tool/#:~:text=NET%20Core%20global%20tool%20to,you%20need%20to%20have%20the%20.
 
-2) converted BundleConfig.cs file to bundleconfig.json file to create bundle and minification of static files like
-css, js and plugins.
+2) converted BundleConfig.cs file to bundleconfig.json file to create bundle and minification of static files like css, js and plugins.
 
 3) Updated @Scripts and @Styles to respective <link> and <script> tags in cshtml files.
 
@@ -19,6 +19,7 @@ css, js and plugins.
 6) Converted "Url.Encode" to "System.Net.WebUtility.UrlEncode".
 
 7) Converted "Context.Request.QueryString["CategoryId"]" to "Context.Request.Query["CategoryId"].ToString();"
+   
    Need to check this if the above didn't work -> https://forums.asp.net/t/2141710.aspx?Request+QueryString+
 	
 8) Converted "HtmlHelper" to "IHtmlHelper".
