@@ -8,7 +8,7 @@ Note: https://www.alextitarenko.me/blog/archive/2018/4/my-experience-with-migrat
 
 https://andrewlock.net/converting-web-config-files-to-appsettings-json-with-a-net-core-global-tool/#:~:text=NET%20Core%20global%20tool%20to,you%20need%20to%20have%20the%20.
 
-2) converted BundleConfig.cs file to bundleconfig.json file to create bundle and minification of static files like css, js and plugins.
+2) converted "BundleConfig.cs" file to "bundleconfig.json" file to create bundle and minification of static files like css, js and plugins.
 
 3) Updated @Scripts and @Styles to respective <link> and <script> tags in cshtml files.
 
