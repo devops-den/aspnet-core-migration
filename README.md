@@ -6,7 +6,7 @@ Below are the high level substitutions for the packages/methods which are needs 
 
 1) I have used this link to convert first "web.config" file to "appsettngs.json".
 
-[appsettings.json migrated](https://andrewlock.net/converting-web-config-files-to-appsettings-json-with-a-net-core-global-tool/#:~:text=NET%20Core%20global%20tool%20to,you%20need%20to%20have%20the%20.)
+    [appsettings.json migrated Reference](https://andrewlock.net/converting-web-config-files-to-appsettings-json-with-a-net-core-global-tool/#:~:text=NET%20Core%20global%20tool%20to,you%20need%20to%20have%20the%20.)
 
 2) converted "BundleConfig.cs" file to "bundleconfig.json" file to create bundle and minification of static files like css, js and plugins.
 
@@ -14,7 +14,7 @@ Below are the high level substitutions for the packages/methods which are needs 
 
 4) Converted "@Html.RenderAction" to "@await Component.InvokeAsync" in cshtml pages.
 
-[Html.RenderAction](https://www.stevefenton.co.uk/2019/08/html-renderaction-equivalent-in-net-core-mvc/)
+    [Html.RenderAction Reference](https://www.stevefenton.co.uk/2019/08/html-renderaction-equivalent-in-net-core-mvc/)
 
 5) Converted "ActionResult" to "IActionResult".
 
@@ -87,7 +87,7 @@ Below are the high level substitutions for the packages/methods which are needs 
 	
 	Created new SessionExtension helper class and imported it with "using" clause in controllers with help of below link,
 	
-	[SessionExtension](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-3.0#session-options)
+	[SessionExtension Reference](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-3.0#session-options)
 
 12) Converted "Request.IsMobileDevice" to custom class as there is no package/method available in asp.net core.
 	```
