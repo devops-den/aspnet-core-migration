@@ -6,13 +6,15 @@ Note: https://www.alextitarenko.me/blog/archive/2018/4/my-experience-with-migrat
 
 1) I have used this link to convert first "web.config" file to "appsettngs.json".
 
-https://andrewlock.net/converting-web-config-files-to-appsettings-json-with-a-net-core-global-tool/#:~:text=NET%20Core%20global%20tool%20to,you%20need%20to%20have%20the%20.
+[appsettings.json conversion] (https://andrewlock.net/converting-web-config-files-to-appsettings-json-with-a-net-core-global-tool/#:~:text=NET%20Core%20global%20tool%20to,you%20need%20to%20have%20the%20.)
 
 2) converted "BundleConfig.cs" file to "bundleconfig.json" file to create bundle and minification of static files like css, js and plugins.
 
-3) Updated @Scripts and @Styles to respective <link> and <script> tags in cshtml files.
+3) Updated "@Scripts" and "@Styles" to respective "<link>" and "<script>" tags in cshtml files.
 
-4) Converted "@Html.RenderAction" to "@await Component.InvokeAsync" in cshtml pages.(https://www.stevefenton.co.uk/2019/08/html-renderaction-equivalent-in-net-core-mvc/)
+4) Converted "@Html.RenderAction" to "@await Component.InvokeAsync" in cshtml pages.
+
+[Html.RenderAction] (https://www.stevefenton.co.uk/2019/08/html-renderaction-equivalent-in-net-core-mvc/)
 
 5) Converted "ActionResult" to "IActionResult".
 
@@ -20,8 +22,8 @@ https://andrewlock.net/converting-web-config-files-to-appsettings-json-with-a-ne
 
 7) Converted "Context.Request.QueryString["CategoryId"]" to "Context.Request.Query["CategoryId"].ToString();"
    
-   Need to check this if the above didn't work -> https://forums.asp.net/t/2141710.aspx?Request+QueryString+
-	
+   [Need to check this if the above didn't work] (https://forums.asp.net/t/2141710.aspx?Request+QueryString+)
+
 8) Converted "HtmlHelper" to "IHtmlHelper".
 
 9) Using Dependency Injection for appsettings.
@@ -80,11 +82,12 @@ https://andrewlock.net/converting-web-config-files-to-appsettings-json-with-a-ne
     ```
 	
 11) Converted "Session["Trans"] = transact;" to "Session.SetObject("Trans", "transact");"
-	Note:=> https://benjii.me/2016/07/using-sessions-and-httpcontext-in-aspnetcore-and-mvc-core/
+	
+    [Reference Note] (https://benjii.me/2016/07/using-sessions-and-httpcontext-in-aspnetcore-and-mvc-core/)
 	
 	Created new SessionExtension helper class and imported it with "using" clause in controllers with help of below link,
 	
-	https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-3.0#session-options
+	[SessionExtension] (https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-3.0#session-options)
 
 12) Converted "Request.IsMobileDevice" to custom class as there is no package/method available in asp.net core.
 	```
